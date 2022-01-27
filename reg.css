@@ -1,0 +1,90 @@
+ .jumbotron {
+    margin-bottom: 0px;
+    background-image: url("./images/background.png");
+    background-size: 100%;
+    color:white;
+}
+
+
+#logo {
+    height: 150px;
+    width: 200px;
+    margin-right: 15px;
+    float: left;
+}
+
+
+
+body{
+  font-family: Arial;
+  background-color: black;
+}
+
+
+input[type=submit]{
+      border: 2px solid transparent;
+      background: #BBB9B9;
+      color: white;
+      font-size: 16px;
+      line-height: auto;
+      width: auto;
+      padding: auto 0;
+      border-radius: 3px; 
+}
+input[type=submit]:hover{
+ background: #2980b9;
+}
+
+input[type=button]{
+      border: 2px solid transparent;
+      background: #BBB9B9;
+      color: white;
+      font-size: 16px;
+      line-height: auto;
+      width: auto;
+      padding: auto 0;
+      border-radius: 3px; 
+}
+input[type=button]:hover{
+ background: #2980b9;
+}
+
+
+
+
+    footer {
+      background-color: #f2f2f2;
+      padding: 15px;
+    }
+    
+
+  /*footer*/
+  .footer {
+    position: auto;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 4px solid black;
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 5px;
+    text-align: center;
+}
+
+.footer span {
+    float: left;
+}
+
+.footer .social {
+    float: right;
+}
+
+.footer .social h3 {
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.footer .social img {
+    height: 40px;
+    width: 40px;

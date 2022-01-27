@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Add Payment Option</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel ="stylesheet" href="styles.css">
+  
+</head>
+<body>
+<div class="jumbotron" id ="tron_hide">
+	<div class = "ship">
+	<div class="col-sm-2">
+		<img id="logo" src="./images/pagelogo.jpg" alt="">
+    </div>
+    <h1>Rainbow Printers</h1>      
+    <p>Mission, Vission & Values</p>
+	</div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Rainbow Printers</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+		    <li><a href="download.html">Download App</a></li>
+		    <li><a href="offers.html">Todays Offer</a></li>
+      </ul>
+	  
+        <form class="navbar-form navbar-left" role="search">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="q">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+        </form>
+    
+      <ul class="nav navbar-nav navbar-right">
+	  
+        <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span>  Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="ship">
+    <div class ="row">
+        <div class ="col-sm-12">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="my-account.html">My Account</a></li>
+          <li class="active">Add Payment Option </li>        
+        </ol>
+        </div>
+      </div>
+  <div class="features-boxed">
+    <div class="container">
+        <h2 class=".h2-center">Add Payment Method</h2>
+          <div class="row">
+              <div class="col-md-6 item">
+                  <div class="row">
+                      <div class="col-md-12  col-xs-12">
+                          <div class="panel panel-default">
+                              <div class="panel-heading">
+                                  <h3 class="panel-title"><span class="panel-title-text">Biling Address</span></h3>
+                              </div>
+                              <div class="panel-body">
+                                  <form id="Billing-form">
+                                      <div class="row">
+                                          <div class="col-xs-12">
+                                              <div class="form-group">
+                                                <label for="full-name" class="control-label">Full Name</label>
+                                                  <div class="input-group input-width"><input type="text" required placeholder="Full Name" class="form-control" id="full-name" />
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-xs-12">
+                                              <div class="form-group">
+                                                  <label for="address1" class="control-label">Address1</label>
+                                                    <div class="input-group input-width">
+                                                        <textarea class="form-control rounded-0" required  required placeholder="Address" id="address1" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-xs-12">
+                                              <div class="form-group">
+                                                  <label for="address2" class="control-label">Address2</label>
+                                                    <div class="input-group input-width">
+                                                        <textarea class="form-control rounded-0" placeholder="Address2 Optional" id="address2" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-xs-6 pull-left">
+                                              <label for="city" class="control-label">city</label>
+                                                  <div class="input-group input-width"><input type="text" required placeholder="city" class="form-control" id="city" />
+                                                  </div>
+                                          </div>
+                                          <div class="col-xs-6 pull-right">
+                                              <div class="form-group"><label for="country" class="control-label">Country</label>
+                                                <div class="custom-select" >
+                                                  <select id="country">
+                                                    <option value="0">Select Country:</option>
+                                                    <option value="1">Sri Lanka</option>
+                                                    <option value="2">Singapore</option>
+                                                    <option value="3">Pakistan</option>
+                                                    <option value="4">Thailand</option>
+                                                    <option value="5">Bangladesh</option>
+                                                    <option value="6">Maldives</option>
+                                                    <option value="7">Nepal</option>
+                                                    <option value="8">Afganistan</option>
+                                                    <option value="9">United States America</option>
+                                                  </select>
+                                                </div>
+                                                </div>
+                                          </div>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 item">
+                  <div class="row">
+                      <div class="col-md-12 col-xs-12">
+                          <div class="panel panel-default credit-card-box">
+                              <div class="panel-heading">
+                                  <h3 class="panel-title"><span class="panel-title-text">Debit/Credit Card</span></h3>
+                              </div>
+                              <div class="panel-body">
+                                  <form id="payment-form">
+                                      <div class="row">
+                                          <div class="col-xs-12">
+                                              <div class="form-group">
+                                                <label for="name-on-card" class="control-label">Name on Card</label>
+                                                  <div class="input-group input-width"><input type="text" required placeholder="Name On Card" class="form-control" id="name-on-card" />
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-xs-12">
+                                              <div class="form-group"><label for="cardNumber" class="control-label">Card number</label>
+                                                  <div class="input-group input-width"><input type="number" required placeholder="Valid Card Number" maxlength="19" class="form-control" id="cardNumber" />
+                                                      
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-xs-6 pull-left">
+                                              <div class="form-group"><label for="cardExpiry" class="control-label">Expiration</label>
+                                                <input type="month" required placeholder="Month / Year" class="form-control" id="cardExpiry"/></div>
+                                          </div>
+                                          <div class="col-xs-6 pull-right">
+                                              <div class="form-group"><label for="cardCVC" class="control-label">cv code</label><input type="number" required placeholder="CVC" maxlength="3" class="form-control" id="cardCVC" /></div>
+                                          </div>
+                                      </div>
+                                     <div class="row">
+                                          <div class="col-xs-6 pull-left">
+                                              <div class="checkbox">
+                                                  <label for="same-as-billing-address"><input id="same-as-billing-address" type="checkbox" value="">Same as Billing Address</label>
+                                                </div>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-xs-4 pull-left"><button class="btn btn-primary btn-block btn-md"  type="reset">Cancel</button></div>
+                                          
+                                          <div class="col-xs-6 pull-right"><button class="btn btn-success btn-block btn-md" type="submit">Add Payment Method</button></div>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </div>
+  </div>
+</div>
+
+  
+	<br>
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+  <div class="footer">
+  <span>Copyrights</span>
+        <div class="social">
+            <h3>Follow Us</h3>
+            <img src="./images/fb.png" alt="" >
+            <img src="./images/twitter.png" alt="">
+            <img src="./images/ins.png" alt="">
+            <img src="./images/yt.png" alt="">
+        </div>
+	</div>	
+</footer>
+  <!--jQuery first, then Popper.js, then Bootstrap JS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./js/image_on_submit.js"> </script>
+</body>
+</html>

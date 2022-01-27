@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Edit Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel ="stylesheet" href="styles.css">
+  
+</head>
+<body>
+<div class="jumbotron" id ="tron_hide">
+	<div class = "ship">
+	<div class="col-sm-2">
+		<img id="logo" src="./images/pagelogo.jpg" alt="">
+    </div>
+    <h1>Rainbow Printers</h1>      
+    <p>Mission, Vission & Values</p>
+	</div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Rainbow Printers</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+		    <li><a href="download.html">Download App</a></li>
+		    <li><a href="offers.html">Todays Offer</a></li>
+      </ul>
+	  
+        <form class="navbar-form navbar-left" role="search">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="q">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+        </form>
+    
+      <ul class="nav navbar-nav navbar-right">
+	  
+        <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span>  Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="ship">
+    <div class ="row">
+        <div class ="col-sm-12">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="my-account.html">My Account</a></li>
+          <li class="active">Edit Profile </li>        
+        </ol>
+        </div>
+       </div>
+  <div class="features-boxed">
+    <div class="container">
+        <div class="row features">
+            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 item">
+                <div class="box" id="div-border-1">
+                    <div class="media">
+                        <div class="media-left"><a><img src="./images/user.png" width="65px" class="media-object" height="65px" /></a></div>
+                        <div class="media-body">
+                            <h4 class="media-heading">You Can Upload a JPG, PNG, GIF or Webp </h4>
+                            <form id="hidden-image-upload-form" name="image-form" > 
+                              <label class="btn btn-default btn-file" id="browse"> <div = "change-label"> Upload image </div> <input type="file" id="image-file" action="#" method="POST"style="display:none;"/></label> 
+                            </form>
+                        </div>
+                    </div>
+                    <hr>
+                    <div ><p>By Clicking "Upload image" you agree to distribute this image and that it does not violate the "User Agreement".</p></div>
+                </div>
+            </div>
+            <div class = "col-sm-12"></div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="box" id="div-border-1">
+                    <div class="x_content">
+                      <br />
+                                    <form id="user-details-form"  class="form-horizontal form-label-left" action=#>
+                                        <div class="form-group">
+                                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="firstname"><font color="white">First Name</font></label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" id="firstname" class="form-control col-md-7 col-xs-11" pattern="[a-zA-Z]{3,12}" />
+                                              <span class="validity "></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group"><label class="control-label col-md-3 col-sm-3 col-xs-12" for="lastname"><font color="white">Last Name</font></label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" id="lastname" name="lastname"  class="form-control col-md-7 col-xs-11" pattern="[a-zA-Z]{3,12}" />
+                                              <span class="validity"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group"><label class="control-label col-md-3 col-sm-3 col-xs-12"><font color="white">Gender</font></label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div id="gender" class="btn-group" >
+                                                  <label class="btn btn-default"><input type="radio" name="gender" value="male" /> Male</label>
+                                                  <label class="btn btn-default"><input type="radio" name="gender" value="female" /> Female</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group"><label class="control-label col-md-3 col-sm-3 col-xs-12" for="telnumber"><font color="white">Telephone Number</font></label>
+                                          <div class="col-md-6 col-sm-6 col-xs-12"><input type="tel" id="telnumber" name="telnumber" maxlength="10" pattern="^[0-9-+s()]*$" class="form-control col-md-7 col-xs-11" />
+                                            <span class="validity"></span>
+                                          </div>
+                                        </div>
+                                        <div class="form-group"><label class="control-label col-md-3 col-sm-3 col-xs-12" for="email"><font color="white">Email</font></label>
+                                          <div class="col-md-6 col-sm-6 col-xs-12"><input type="email" id="email" name="email" class="form-control col-md-7 col-xs-11" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+                                            <span class="validity"></span>
+                                          </div>
+                                        </div>
+                                        <div class="form-group"><label class="control-label col-md-3 col-sm-3 col-xs-12" for="Profession"><font color="white">Profession</font></label>
+                                          <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" id="profession" name="profession"  class="form-control col-md-7 col-xs-11" pattern="[a-zA-Z]{3,12}"/>
+                                            <span class="validity"></span>
+                                          </div>
+                                        </div>
+                                        <div class="form-group"><label class="control-label col-md-3 col-sm-3 col-xs-12" for="college"><font color="white">College</font></label>
+                                          <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" id="college" name="college"  class="form-control col-md-7 col-xs-11" pattern="[a-zA-Z]{5,22}"/>
+                                            <span class="validity"></span>
+                                          </div>
+                                        </div>
+                                        <div class="form-group"><label class="control-label col-md-3 col-sm-3 col-xs-12" for="collegeid"><font color="white">College ID</font></label>
+                                          <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" id="collegeid" name="collegeid" maxlength="10" pattern="[a-zA-Z]{10}"class="form-control col-md-7 col-xs-11" />
+                                            <span class="validity"></span>
+                                          </div>
+                                        </div>
+                                        <div class="form-group"><label class="control-label col-md-3 col-sm-3 col-xs-12" for="address"><font color="white">Address</font></label>
+                                          <div class="col-md-6 col-sm-6 col-xs-12"><textarea class="form-control rounded-0" id="address" rows="3" pattern="[a-zA-Z]{5,42}"></textarea>
+                                          
+                                          </div>
+                                        
+                                        </div>
+                                        <div class="form-group"><label class="control-label col-md-3 col-sm-3 col-xs-12" for="city"><font color="white">City</font></label>
+                                          <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" id="city" name="city" class="form-control col-md-7 col-xs-11" pattern="[a-zA-Z]{3,12}"/>
+                                            <span class="validity"></span>
+                                          </div>
+                                        </div>
+                                        <div class="form-group"><label class="control-label col-md-3 col-sm-3 col-xs-12" for="country"><font color="white">Country of Residence</font></label>
+                                          <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" id="country" name="country" class="form-control col-md-7 col-xs-11" pattern="[a-zA-Z]{3,12}"/>
+                                            <span class="validity"></span>
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                              <button type="reset" class="btn btn-primary" onclick="window.location.href='./my-account.html'" >Cancel</button>
+                                               &nbsp;&nbsp;
+                                              <button type="submit" class="btn btn-success">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                      </div>
+                  </div>           
+              </div>
+        </div>
+    </div>
+  </div>
+</div>
+	<br>
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+  <div class="footer">
+  <span>Copyrights</span>
+        <div class="social">
+            <h3>Follow Us</h3>
+            <img src="./images/fb.png" alt="" >
+            <img src="./images/twitter.png" alt="">
+            <img src="./images/ins.png" alt="">
+            <img src="./images/yt.png" alt="">
+        </div>
+	</div>	
+</footer>
+  <!--jQuery first, then Popper.js, then Bootstrap JS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./passwordjs/validation.js"> </script>
+</body>
+</html>

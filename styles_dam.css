@@ -1,0 +1,282 @@
+	/* Remove the jumbotron's default bottom margin */ 
+ .jumbotron {
+    margin-bottom: 0px;
+    background-image: url("./images/background.png");
+    background-size: 100%;
+    color:white;
+}
+	
+#logo 
+{
+    	height: 150px;
+    	width: 150px;
+    	margin-right: 15px;
+    	float: left;
+}
+
+	/* Hide the jumbotron's defualt bottom */
+
+@media screen and (max-width: 800px) 
+{
+	#tron_hide
+	{
+    		visibility: hidden;
+    		clear: both;
+    		float: left;
+    		margin: 10px auto 5px 20px;
+    		width: 28%;
+    		display: none;
+	}
+
+}
+
+	/* Remove the navbar's default margin-bottom and rounded borders */ 
+
+.navbar
+{
+      	margin-bottom: 0;
+     	border-radius: 0;
+}
+    
+    	/* Add a gray background color and some padding to the footer */
+
+footer
+{
+	background-color: #f2f2f2;
+    padding: 25px;
+	width : 100%;
+	position : auto ;
+
+	
+}
+    
+.carousel-inner img
+{
+      	width: 100%; /* Set width to 100% */
+      	margin: auto;
+      	min-height:200px;
+}
+
+  	/* Hide the carousel text when the screen is less than 600 pixels wide */
+
+@media (max-width: 600px) 
+{
+    	.carousel-caption
+	{
+      		display: none; 
+    	}
+}
+  
+  /* styles for main content (body content) */
+
+.ship
+{
+    	padding-top: 20px;
+    	padding-bottom: 20px;
+    	padding-left: 20px;
+    	padding-right: 20px;
+}
+
+.text-align-in-ship
+{
+    	padding-top: 30px;
+}
+
+.breadcrumb > li + li:before 
+{
+  	content: " > ";
+  	padding: 0 5px;
+  	color: #ccc;
+}
+
+.comments 
+{
+    	height: 300px;
+    	width: 100%;
+    	margin-top: 40px;
+}
+
+.comments textarea 
+{
+    	font-size: 20px;
+    	resize: none;
+    	width: 100%;
+    	height: 100%;
+    	border: 1px solid black;
+    	border-radius: 10px;
+}
+  	/*footer*/
+.footer 
+{
+    	position: relative;
+    	left: 0;
+    	bottom: 0;
+    	width: 100%;
+    	border-top: 4px solid black;
+    	padding-top: 20px;
+    	margin-top: 30px;
+    	text-align: center;
+}
+
+.footer span 
+{
+    	float: left;
+}
+
+.footer .social 
+{
+    	float: right;
+}
+
+.footer .social h3 
+{
+    	margin-bottom: 5px;
+    	margin-top: 0px;
+}
+
+.footer .social img 
+{
+    	height: 40px;
+    	width: 40px;
+}
+#gridTextLeft1
+{
+	float : left;
+	width : 500px;
+	height : 150px;
+	text-align : justify;
+	margin-left : 25px;
+	color : white;
+	
+}
+#h2AU
+{
+	margin-left : 15px;
+	color : white;
+}
+#h2AURight
+{
+	margin-right : 15px;
+	float : right;
+	color : white;
+}
+#gridTextRight1
+{
+	float : right;
+	margin-right : 80px;
+
+}
+.slideshow
+{
+	height : 220px;
+	width : 480px;
+	
+}
+#gridTextLeft2
+{
+	float : left;
+	width : 300px;
+	height : 150px;
+	text-align : justify;
+	margin-left : 25px;
+	margin-right : 25px;
+	
+}
+#gridTextRight2
+{
+	float : right;
+	width : 300px;
+	height : 150px;
+	text-align : justify;
+	margin-right : 20px;
+	max-width : 500px;
+}
+.table
+{
+	width : 100%;
+	border : none;
+}
+tr
+{
+	border : solid black;
+}
+#imageTeam
+{
+	width : 200px;
+	height : 250px;
+}
+h4
+{
+	margin-left : 30px;
+	color : white;
+}
+#para
+{
+	width : 350px;
+	text-align : justify;
+	margin-left : 25px;
+	color : white;
+}
+#pp-para
+{
+	width : 95%;
+	text-align : justify;
+	margin-left : 25px;
+	color : white;
+}
+.button
+{
+	background-color: #534A48;
+    color: white;
+    padding-top : 25px;
+	padding-bottom : 25px;
+	padding-bottom : 25px;
+	padding-left : 20px;
+	padding-right : 20px;
+	border-radius : 6px;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.button:hover
+{
+	background-color: #ccc;
+	color : black;
+}
+body
+{
+	background-color : black;
+}
+li
+{
+	color : white;
+}
+#ppimages
+{
+	margin-top : 40px;
+	margin-bottom : 40px;
+}
+#imageoffer
+{
+	height : 220px;
+	width : 280px;
+	margin-top : 40px;
+	margin-bottom : 40px;
+	margin-left : 40px;
+	margin-right : 40px;
+}
+#h4offer
+{
+	color : white;
+	margin-left : 120px;
+}
+#para-offer
+{
+	width : 280px;
+	margin-left : 40px;
+	margin-right : 40px;
+	text-align : justify;
+	color : white;
+}

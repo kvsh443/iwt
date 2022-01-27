@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  		<title>Privacy Policy</title>
+
+  		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 	 	<link rel ="stylesheet" href="styles_dam.css">
+		<script src = "payvalidate.js"></script>
+	</head>
+
+	<body>
+		<div class="jumbotron" id ="tron_hide">
+		<div class = "ship">
+		<div class="col-sm-2">
+		<img id="logo" src="./images/pagelogo.jpg" alt="Page Logo">
+    		</div>	
+
+    		<h1>Rainbow Printers</h1>      
+    		<p>Mission, Vission & Values</p>
+		</div>
+		</div>
+
+		<nav class="navbar navbar-inverse">
+
+ 	 	<div class="container-fluid">
+
+    		<div class="navbar-header">
+
+      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>                        
+      			</button>
+
+      			<a class="navbar-brand" href="#">Rainbow Printers</a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="myNavbar">
+
+      			<ul class="nav navbar-nav">
+
+        			<li><a href="index.html">Home</a></li>
+        			<li><a href="services.html">Services</a></li>
+        			<li class="active"><a href="about-us.html">About Us</a></li>
+        			<li><a href="contact-us.html">Contact Us</a></li>
+		    		<li><a href="download.html">Download App</a></li>
+		    		<li><a href="offers.html">Todays Offer</a></li>
+      			</ul>
+	  
+        		<form class="navbar-form navbar-left" role="search">
+
+        	<div class="input-group">
+
+            		<input type="text" class="form-control" placeholder="Search" name="q">
+
+            	<div class="input-group-btn">
+
+                	<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+
+            	</div>	
+        	</div>
+        	</form>
+    
+      			<ul class="nav navbar-nav navbar-right">
+	  
+        			<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>   My Account </a></li>
+      			</ul>
+
+    		</div>
+  		</div>
+		</nav>
+
+		<div class="ship">
+
+
+ 		<div class ="row">
+
+  		<div class ="col-sm-12">
+	
+  			<ol class="breadcrumb">
+
+    				<li><a href="index.html">Home</a></li>
+    				<li><a href="about-us.html">My Account</a></li>   
+					<li class="active">Add payment option</li>
+     
+  			</ol>
+
+  		</div>
+ 		</div>
+		</div>
+		
+		<h2 id = "h2AU">Add Payment Method</h2>
+		
+		<div class="payborder">
+		
+		<form method = "POST" action = "payformvalues.php" onsubmit = "return payValidation();">
+		
+		
+			<table border=0 width=100% >
+			
+				<tr>
+				
+					<th class="paytablehead" >Billng Address</th>
+					
+					<th class="paytablehead">Debit/Credit Card</th>
+					
+				</tr>
+				
+				
+				<tr>
+				
+					<td class="paytabledata">Full Name</td>
+					
+					<td class="paytabledata">Name on card</td>
+					
+				</tr>
+				
+				
+				<tr>
+				
+					<td width="50%"><input type = "text" size="50px" name = 'fullname' required></td>
+					
+					<td width="50%"><input type = "text" size="50px" name = "nameoncard" required></td>
+					
+				</tr>
+				
+				
+				<tr>
+				
+					<td class="paytabledata">Address Line 1</td>
+					
+					<td class="paytabledata"> Card Number</td>
+					
+				</tr>
+				
+				<tr>
+				
+					<td width="50%"><input type = text size="50px" name = "baddressline1" required></td>
+					
+					<td width="50%"><input type = text size="50px" name = "cardnumber" id = "cardnumber"  required></td>
+					
+				</tr>
+				
+				
+				<tr>
+				
+					<td class="paytabledata">Address Line 2</td>
+					
+					<td class="paytabledata">Expiry Date &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp CVV Number</td>
+					
+				</tr>
+				
+				
+				<tr>
+				
+					<td width="50%"><input type = text size="50px" name = "baddressline2" required></td>
+					
+					<td><input type = date name = "expiry" required> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type = "text" name = "cvv" required></td>
+					
+				</tr>
+				
+				
+				<tr>
+				
+					<td class="paytabledata">City &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp State</td>
+					
+					<!--<td class="paytabledata"><input type = "checkbox" name = "same">Same as billing address</td>-->
+					
+				</tr>
+				
+				
+				<tr>
+				
+					<td><input type = "text" name = "bcity" required> &nbsp &nbsp &nbsp &nbsp <input type = "text" name = "bstate" value = "Sri Lanka" required></td>
+					
+					<td class="paytabledata">Address Line 1</td>
+					
+				</tr>
+				
+				
+				<tr>
+				
+					<td class="paytabledata">Zip &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Country</td>
+					
+					<td width="50%"><input type = "text" size="50px" name = "caddressline1" required></td>
+					
+				</tr>
+				
+				
+				<tr>
+				
+					<td><input type = "text" name = "bzip" required> &nbsp &nbsp &nbsp &nbsp <input type = "text" name = "bcountry" value = "Sri Lanka" required></td>
+					
+					<td class="paytabledata">Address Line 2</td>
+					
+				</tr>
+				
+				
+				<tr>
+				
+					<td></td>
+					
+					<td width="50%"><input type = text size="50px"  name = "caddressline2" required></td>
+					
+				</tr>
+				
+				
+				<tr>
+				
+					<td></td>
+					
+					<td class="paytabledata">City &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp State</td>
+					
+				</tr>
+				
+				
+				<tr>
+				
+					<td><p class = "payerrorpara" id = "perror"></p></td>
+					
+					<td><input type = "text" name = "ccity" required> &nbsp &nbsp &nbsp &nbsp <input type = "text" name = "cstate" value = "Sri Lanka" required></td>
+					
+				</tr>
+				
+				
+				<tr>
+				
+					<td></td>
+					
+					<td class="paytabledata">Zip &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Country</td>
+				</tr>
+				
+				
+				<tr>
+				
+					<td></td>
+					
+					<td><input type = "text" name = "czip" required> &nbsp &nbsp &nbsp &nbsp <input type = "text" name = "ccountry" value = "Sri Lanka" required></td>
+					
+				</tr>
+				
+				
+				<tr>
+				
+					<td><input type = "reset" value = "Reset" class = "paybutton" name = "reset"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+					<input type = "submit" value = "Confirm" class = "paybutton" name = "confirm"></td>
+					
+					<td></td>
+					
+				</tr>
+				
+			</table>
+			
+			</form>
+			
+		</div>
+		
+		<footer class="container-fluid text-center">
+
+  		<p>Footer Text</p> 	
+	
+  		<div class="footer">
+	
+  			<span>Copyrights</span>
+
+        	<div class="social">
+
+            		<h3>Follow Us</h3>
+
+            		<img src="./images/fb.png" alt="" >
+            		<img src="./images/twitter.png" alt="">
+            		<img src="./images/ins.png" alt="">
+            		<img src="./images/yt.png" alt="">
+        	</div>
+		</div>
+	
+		</footer>
+  	<!--jQuery first, then Popper.js, then Bootstrap JS-->	
+
+ 	 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+	
+	</body>
+
+</html>
