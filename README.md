@@ -2,7 +2,6 @@
 2019-Aug-14
 
 This is a colaborated group project done with [@chathucka](https://github.com/chathucka) and other two members.
-Project contains front-end only.
 
 Introduction
 >College E-print Management Service is a free online service available to all college students.
