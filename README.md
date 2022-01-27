@@ -1,5 +1,5 @@
 # Introduction to Web Technologies Project for Campus 1st Year 2nd Semester
-2019-Aug-14
+2018-Aug-14
 
 This is a colaborated group project done with [@chathucka](https://github.com/chathucka) and other two members.
 
